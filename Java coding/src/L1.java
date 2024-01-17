@@ -21,17 +21,24 @@ public class L1 {
 public class L1 {
 
     public static void main(String[] args){
-        String name = "Tony Stark";
-        int age = 48;
-        double price = 87.98;
-        int a = 87;
-        int b = 66;
+        
+        int a = 8;
+        int b = 6;
 
-        System.out.println(name);
-        System.out.println(age);
-        System.out.println(price);
-        System.out.println(a);
-        System.out.println(b);
+        int sum = a+b;
+        int diff = a-b;
+        int mul = a*b;
+        int div = a/b;
+        int rem = a%b;
+
+
+        System.out.println(sum);
+        System.out.println(diff);
+        System.out.println(mul);
+        System.out.println(div);
+        System.out.println(rem);
+
+       
 
     }
 }
