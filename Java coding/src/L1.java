@@ -57,6 +57,7 @@ public class L1 {
 
         int a = sc.nextInt();
         float b = sc.nextFloat();
+        
 
         // System.out.println(name);
         System.out.println(name1);
