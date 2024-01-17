@@ -1,3 +1,5 @@
+import java.util.*;
+
 /* 
 public class L1 {
     public static void main(String[] args) {
@@ -16,8 +18,10 @@ public class L1 {
 }
 */
 
+
 /*Variables in java */
 
+/* 
 public class L1 {
 
     public static void main(String[] args){
@@ -37,8 +41,26 @@ public class L1 {
         System.out.println(mul);
         System.out.println(div);
         System.out.println(rem);
+    }
+}
+*/
 
-       
+/*Taking input */
 
+public class L1 {
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        // String name = sc.next();     // To take input of single word
+        String name1 = sc.nextLine();   // To take input of whole line
+
+        int a = sc.nextInt();
+        float b = sc.nextFloat();
+
+        // System.out.println(name);
+        System.out.println(name1);
+        System.out.println(a);
+        System.out.println(b);
     }
 }
