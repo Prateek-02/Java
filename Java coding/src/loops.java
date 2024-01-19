@@ -53,15 +53,34 @@ public class loops{
 
 /* Questions */
 
+
 // 1> Print the sum of n natural numbers
 
+/* 
 public class loops{
     public static void main(String[] args) {
-        int n=4;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int sum=0;
         for(int i=1;i<=n;i++){
             sum+=i;
         }
         System.out.println(sum);
+    }
+}
+*/
+
+
+// 2> Print the table of a number input by the user
+
+
+public class loops {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=1;i<=10;i++){
+            System.out.println(i + " X " + n + " = " + i*n );
+        }
     }
 }
