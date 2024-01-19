@@ -37,6 +37,7 @@ public class loops{
 
 /* Do while loop */
 
+/*
 public class loops{
     public static void main(String args[]){
         int i=0;
@@ -45,5 +46,22 @@ public class loops{
             i++;
         }
         while(i<=10);
+    }
+}
+*/
+
+
+/* Questions */
+
+// 1> Print the sum of n natural numbers
+
+public class loops{
+    public static void main(String[] args) {
+        int n=4;
+        int sum=0;
+        for(int i=1;i<=n;i++){
+            sum+=i;
+        }
+        System.out.println(sum);
     }
 }
