@@ -21,6 +21,7 @@ public class loops {
 
 /* While loop */
 
+/*
 public class loops{
     public static void main(String args[]){
         int n = 0;
@@ -29,5 +30,20 @@ public class loops{
             n++;
         }   
 
+    }
+}
+*/
+
+
+/* Do while loop */
+
+public class loops{
+    public static void main(String args[]){
+        int i=0;
+        do{
+            System.out.println(i);
+            i++;
+        }
+        while(i<=10);
     }
 }
