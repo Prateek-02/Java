@@ -132,7 +132,7 @@ public class patterns {
 */
 
 
-// 7 (printing inverted half pyramid numbers)
+// 7 (Printing inverted half pyramid numbers)
 
 /*
 public class patterns {
@@ -154,6 +154,7 @@ public class patterns {
 
 // 8 (Floyd's Triangle)
 
+/*
 public class patterns {
 
     public static void main(String[] args) {
@@ -165,6 +166,29 @@ public class patterns {
             for(int j=1;j<=i;j++){
                 System.out.print(count+" ");
                 count++;
+            }
+            System.out.println();
+        }
+    }
+}
+*/
+
+
+// 9 (0-1 Triangle)
+
+public class patterns {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                if((i+j)%2==0)
+                System.out.print("1");
+                else{
+                    System.out.print("0");
+                 }
             }
             System.out.println();
         }
