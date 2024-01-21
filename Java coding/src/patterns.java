@@ -69,6 +69,7 @@ public class patterns {
 
 //4 (Inverse half pyramid)
  
+/*
 public class patterns {
 
     public static void main(String[] args) {
@@ -83,5 +84,27 @@ public class patterns {
         }
     }
 }
+*/
 
 
+//4 (Inverse half pyramid rotated 180deg)
+
+public class patterns {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        for(int i=1;i<=n;i++){
+            //Inner loop -> space print
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //Inner loop -> star print
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
