@@ -184,11 +184,11 @@ public class patterns {
 
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
-                if((i+j)%2==0)
+                if((i+j)%2==0)    //Even
                 System.out.print("1");
-                else{
+                else{             //Odd
                     System.out.print("0");
-                 }
+                }
             }
             System.out.println();
         }
