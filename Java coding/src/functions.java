@@ -20,18 +20,61 @@ public class functions {
 
 // 2 (Add two numbers)
 
+/*
 public class functions {
 
-    public static void addNum(int a,int b){
-        System.out.println(a+b);
-        return;
+    public static int addNum(int a,int b){
+        int sum = a+b;
+        return sum ;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        addNum(a, b);
+        int sum = addNum(a, b);
+        System.out.println("Sum of a and b is: " + sum);
+    }
+}
+*/
 
+
+// 3 (Multiply two numbers)
+
+/*
+public class functions {
+
+    public static int mulNum(int a,int b){
+        int prod = a*b;
+        return prod;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int prod = mulNum(a, b);
+        System.out.println("Product of a and b is: " + prod);
+    }
+}
+*/
+
+
+// 4 (Find the factorial of a number)
+
+public class functions {
+
+    public static void fact(int n){
+        //loop
+        int fact = 1;
+        for(int i=n;i>=1;i--){
+            fact*=i;
+        }
+        System.out.println(fact);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        fact(n);
     }
 }
