@@ -46,24 +46,45 @@ public class funcques {
 */
 
 
-// 3(Take two numbers and finid the greatest)
+// 3(Take two numbers and return the greatest)
 
+/*
 public class funcques {
 
-    public static void greatest(int a,int b){
+    public static int greatest(int a,int b){
         if(a>b){
-            System.out.println("a is greater");
+            return a;
         }
         else{
-            System.out.println("b is greater");
+            return b;
         }
-        return;
+        
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        greatest(a, b);
+        int res = greatest(a, b);
+        System.out.println(res + " is greater");
+    }
+}
+*/
+
+
+// 4 (Take radius as input and return the cicumference of circle)
+
+public class funcques {
+
+    public static double circumference(float r){
+        double circumference = 2*(3.14)*r;
+        return circumference;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float r = sc.nextInt();
+
+        double res = circumference(r);
+        System.out.println("Circumference is "+res);
     }
 }
