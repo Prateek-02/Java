@@ -66,11 +66,16 @@ public class functions {
 
     public static void fact(int n){
         //loop
+        if(n<0){
+            System.out.println("Invalid number");
+            return;
+        }
         int fact = 1;
         for(int i=n;i>=1;i--){
             fact*=i;
         }
         System.out.println(fact);
+        return;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
