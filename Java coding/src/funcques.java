@@ -74,6 +74,7 @@ public class funcques {
 
 // 4 (Take radius as input and return the cicumference of circle)
 
+/*
 public class funcques {
 
     public static double circumference(float r){
@@ -87,4 +88,72 @@ public class funcques {
         double res = circumference(r);
         System.out.println("Circumference is "+res);
     }
+}
+*/
+
+
+// 5 (Takes age as an input and returns if that person is eligible to vote)
+
+/*
+public class funcques {
+
+    public static boolean vote(int age){
+        if(age>18){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        
+        boolean res = vote(age);
+        System.out.println(res);
+    }
+}
+*/
+
+
+// 6 (Write a java program to enter the numbers till the user wants and at the end it should display the count of positive,negative and zeros entered)
+
+public class funcques {
+
+    public static void CountNum(int n,int counts[]){
+        if(n>0){
+            counts[0]++;
+        }
+        else if(n<0){
+            counts[1]++;
+        }
+        else{
+            counts[2]++;
+        }
+    }
+
+    public static void Display(int[] counts){
+        System.out.println("Count of positive nums: " + counts[0]);
+        System.out.println("Count of negative nums: " + counts[1]);
+        System.out.println("Count of zeros: " + counts[2]);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] counts = {0,0,0};
+        char choice;
+
+        do{
+            System.out.print("Enter a number: ");
+            int n = sc.nextInt();
+
+            CountNum(n,counts);
+            System.out.print("Do you want to enter a number(y/n): ");
+
+            choice = sc.next().charAt(0);
+        }
+        while(choice =='y' || choice =='Y');
+
+        Display(counts);
+    }
+
 }
