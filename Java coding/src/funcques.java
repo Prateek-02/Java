@@ -162,6 +162,7 @@ public class funcques {
 
 // 7 (Find the value of one number raised to the power of another)
 
+/*
 public class funcques {
 
     public static void NumPower(int x,int n){
@@ -179,5 +180,33 @@ public class funcques {
         int n = sc.nextInt();
 
         NumPower(x,n);
+    }
+}
+*/
+
+
+// 8 (Print fibonacci series)
+
+public class funcques {
+
+    public static void fibo(int n){
+        int a = 0;
+        int b = 1;
+        for(int i=1;i<=n;i++){
+            System.out.print(a+ " ");
+
+            int next = a+b;
+            a=b;
+            b=next;
+        }
+        
+    }
+
+    public static void main(String[] args) {
+        
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        fibo(n);
     }
 }
