@@ -169,11 +169,13 @@ public class funcques {
         for(int i=0;i<n;i++){
             power *= x;
         } 
-        System.out.println(power);
+        System.out.println(x+ " raised to the power "+ n + " is: " + power);
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of base: ");
         int x = sc.nextInt();
+        System.out.print("Enter the value of Exponent: ");
         int n = sc.nextInt();
 
         NumPower(x,n);
