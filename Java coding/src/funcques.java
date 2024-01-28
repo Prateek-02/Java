@@ -118,6 +118,7 @@ public class funcques {
 
 // 6 (Write a java program to enter the numbers till the user wants and at the end it should display the count of positive,negative and zeros entered)
 
+/*
 public class funcques {
 
     public static void CountNum(int n,int counts[]){
@@ -155,5 +156,26 @@ public class funcques {
 
         Display(counts);
     }
+}
+*/
 
+
+// 7 (Find the value of one number raised to the power of another)
+
+public class funcques {
+
+    public static void NumPower(int x,int n){
+        int power = 1;
+        for(int i=0;i<n;i++){
+            power *= x;
+        } 
+        System.out.println(power);
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int n = sc.nextInt();
+
+        NumPower(x,n);
+    }
 }
