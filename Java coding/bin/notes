@@ -1,0 +1,5 @@
+System.out.print --> To print in the same line
+System.out.println --> To print in the new line
+
+Functions --> Called directly
+Methods --> Called using objects of class
