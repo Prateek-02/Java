@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 /*L1*/
 
 /*  public class Online {
@@ -20,8 +23,22 @@
 //     }
 //  }
 
-// 3
+/* ARRAY */
 
+/**
+ * Online
+ */
+public class Online {
+
+    public static void main(String[] args){
+        int arr[] = {1,2,3};
+        int n = arr.length;
+        System.out.println("Length of thr array is: " + n);
+        for(int i=0;i<n;i++){
+            System.out.println(arr[i]);
+        }
+    }
+}
 
 
 
