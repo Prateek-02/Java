@@ -31,11 +31,26 @@ import java.io.*;
 public class Online {
 
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
         int arr[] = {1,2,3};
         int n = arr.length;
         System.out.println("Length of thr array is: " + n);
+        System.out.print("Elements of array: ");
         for(int i=0;i<n;i++){
-            System.out.println(arr[i]);
+            System.out.print(arr[i]+" ");
+        }
+
+        System.out.println();
+
+        int arr2[] = new int[5];
+        System.out.print("Enter the elements of arr2: ");
+        for(int i=0;i<arr2.length;i++){
+            arr2[i] = sc.nextInt();
+        }
+
+        System.out.print("Elements in arr2: ");
+        for(int i=0;i<arr2.length;i++){
+            System.out.print(arr2[i]+" ");
         }
     }
 }
