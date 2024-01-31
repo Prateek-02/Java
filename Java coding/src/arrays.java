@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 /*
 public class arrays {
@@ -26,6 +26,7 @@ public class arrays {
 
 // Take an array as an input.Search for agiven number x and print the index at which it occurs
 
+/*
 public class arrays {
 
     public static void main(String[] args) {
@@ -50,4 +51,29 @@ public class arrays {
             }
         }
     }
+}
+*/
+
+/* Homework Questions */
+
+// 1(Take an array of names as input from the user and print them on the screen.)
+
+public class arrays {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of array: ");
+        int size = sc.nextInt();
+        String names[] = new String[size];
+
+        System.out.print("Enter the elements: ");
+        for(int i=0;i<size;i++){
+            names[i]=sc.next();
+        }
+
+        System.out.print("Elements in array: ");
+        for(int i=0;i<size;i++){
+            System.out.print(names[i]+" ");
+        }
+    }
+    
 }
