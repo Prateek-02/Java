@@ -82,6 +82,7 @@ public class arrays {
 
 // 2(Find the maximum & minimum number in an array of integers.)
 
+/*
 public class arrays {
 
     public static void main(String[] args) {
@@ -111,4 +112,44 @@ public class arrays {
         System.out.println("Largest number is : " + max);
         System.out.println("Smallest number is : " + min);
     }
+}
+*/
+
+
+// 3(Take an array of numbers as input and check if it is an array sorted in ascending order.)
+
+public class arrays {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of array: ");
+        int size = sc.nextInt();
+        int nums[] = new int[size];
+
+        System.out.print("Enter the elements of array: ");
+        for(int i=0;i<size;i++){
+            nums[i] = sc.nextInt();
+        }
+
+        System.out.print("Elements in the array: ");
+        for(int i=0;i<size;i++){
+            System.out.print(nums[i]+" ");
+        }
+        System.out.println();
+
+        boolean isAscending = true;
+
+        for(int i=0;i<nums.length-1;i++){
+            if(nums[i]>nums[i+1]){
+                isAscending=false;
+            }
+        }
+
+        if(isAscending){
+            System.out.println("The array is sorted in asending order");
+        }
+        else{
+            System.out.println("The array is not sorted in ascending order");
+        }
+    }
+    
 }
