@@ -7,9 +7,13 @@ public class arrays {
         int size = sc.nextInt();
         int arr[] = new int[size];
         System.out.print("Enter the elements of array: ");
+
+        //input
         for(int i=0;i<size;i++){
             arr[i] = sc.nextInt();
         }
+        
+        //output
         System.out.print("Elements in array: ");
         for(int i=0;i<size;i++){
             System.out.print(arr[i]+" ");
