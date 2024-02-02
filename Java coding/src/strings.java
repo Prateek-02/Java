@@ -21,7 +21,7 @@ public class strings {
 
 
 // Concatenation
-
+/*
 public class strings {
 
     public static void main(String[] args) {
@@ -35,5 +35,37 @@ public class strings {
         for(int i=0;i<fullname.length();i++){
             System.out.println(fullname.charAt(i));
         }
+    }
+}
+*/
+
+
+// Comparision
+
+public class strings {
+
+    public static void main(String[] args) {
+        String name1 = "Tony";
+        String name2 = "Tony2";
+        String sentence = "My name is Tony";
+        String sentence2 = "TonyStark";
+
+        //1 s1 > s2 : +ve value
+        //2 s1 == s2 : 0(equal)
+        //3 s1 < s2 : -ve value
+
+        /* 
+        if(name1.compareTo(name2)==0){
+            System.out.println("String are equal");
+        }
+        else{
+            System.out.println("Strings are not equal");
+        }
+        */
+
+        String name = sentence.substring(11,sentence.length());
+        String name3 = sentence2.substring(0,5);
+        System.out.println(name);
+        System.out.println(name3);
     }
 }
