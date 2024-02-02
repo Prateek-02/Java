@@ -40,8 +40,9 @@ public class strings {
 */
 
 
-// Comparision
+// Comparision and substring
 
+/*
 public class strings {
 
     public static void main(String[] args) {
@@ -54,18 +55,47 @@ public class strings {
         //2 s1 == s2 : 0(equal)
         //3 s1 < s2 : -ve value
 
-        /* 
-        if(name1.compareTo(name2)==0){
-            System.out.println("String are equal");
-        }
-        else{
-            System.out.println("Strings are not equal");
-        }
-        */
+        
+        // if(name1.compareTo(name2)==0){
+        //     System.out.println("String are equal");
+        // }
+        // else{
+        //     System.out.println("Strings are not equal");
+        // }
+        
 
         String name = sentence.substring(11,sentence.length());
         String name3 = sentence2.substring(0,5);
         System.out.println(name);
         System.out.println(name3);
+
+        // Strings are immutable
     }
 }
+*/
+
+
+// ParseInt Method of Integer class
+
+/*
+public class strings {
+    public static void main(String[] args) {
+        String str = "123";
+        int num = Integer.parseInt(str);
+        System.out.println(num);
+    }
+}
+*/
+
+
+// ToString Method of String class
+
+public class strings {
+    public static void main(String[] args) {
+        int num = 123;
+        String str = Integer.toString(num);
+        System.out.println(str.length());
+    }
+}
+
+    
