@@ -90,6 +90,7 @@ public class strings {
 
 // ToString Method of String class
 
+/*
 public class strings {
     public static void main(String[] args) {
         int num = 123;
@@ -97,5 +98,27 @@ public class strings {
         System.out.println(str.length());
     }
 }
+*/
 
+/* HW questions */
     
+// 1(Take an array of Strings input from the user & find the cumulative (combined) length of all those strings.)
+
+public class strings {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of array: ");
+        int size = sc.nextInt();
+
+        String arr[] = new String[size];
+        int total = 0;
+
+        System.out.println("Enter the elements: ");
+        for(int i=0;i<size;i++){
+            arr[i] = sc.next();
+            total+= arr[i].length();
+        }
+        System.out.println(total);
+    }
+}
