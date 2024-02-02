@@ -100,12 +100,13 @@ public class strings {
 }
 */
 
+
 /* HW questions */
     
 // 1(Take an array of Strings input from the user & find the cumulative (combined) length of all those strings.)
 
+/*
 public class strings {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of array: ");
@@ -120,5 +121,53 @@ public class strings {
             total+= arr[i].length();
         }
         System.out.println(total);
+    }
+}
+*/
+
+
+// 2 (Input a string from the user. Create a new string called ‘result’ in which you will replace the letter ‘e’ in the original string with letter ‘i’.)
+
+/*
+public class strings {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+
+        String result = "";
+
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)=='e'){
+                result += 'i';
+            }
+            else{
+                result += str.charAt(i);
+            }
+        }
+        System.out.println(result);
+    }
+}
+*/
+
+
+// 3(Input an email from the user. You have to create a username from the email by deleting the part that comes after ‘@’. Display that username to the user.)
+
+public class strings {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        String res = "";
+
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)=='@'){
+                break;
+            }
+            else{
+                res += str.charAt(i);
+            }
+        }
+
+        System.out.println(res);
     }
 }
