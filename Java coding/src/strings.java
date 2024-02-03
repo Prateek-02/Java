@@ -176,11 +176,10 @@ public class strings {
 
 
 
-// String Builder
+/* String Builder */
 
-
+/*
 public class strings {
-
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("Tony");
         System.out.println(sb);
@@ -190,6 +189,51 @@ public class strings {
 
         // set char at index
         sb.setCharAt(0, 'P');
+        System.out.println(sb);
+
+        // Insert at index
+        sb.insert(0, 'S');
+        System.out.println(sb);
+
+        // Delete
+        sb.delete(1, 2);
+        System.out.println(sb);
+
+        // Print Toy from Sony
+        sb.setCharAt(0, 'T');
+        sb.delete(2, 3);
+        System.out.println(sb);
+
+        // Append charactcer at end
+        sb.append('s');
+        System.out.println(sb);
+
+        // Length of string
+        System.out.println(sb.length());
+    }
+}
+*/
+
+
+
+// Reverse string
+
+public class strings {
+
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Prateek");
+        // sb.reverse();
+
+        for(int i=0;i<sb.length()/2;i++){
+            int front = i;
+            int back = sb.length() - 1 -i;
+
+            char frontChar = sb.charAt(front);
+            char backChar = sb.charAt(back);
+
+            sb.setCharAt(front, backChar);
+            sb.setCharAt(back, frontChar);
+        }
         System.out.println(sb);
     }
 }
