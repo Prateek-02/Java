@@ -152,6 +152,7 @@ public class strings {
 
 // 3(Input an email from the user. You have to create a username from the email by deleting the part that comes after ‘@’. Display that username to the user.)
 
+/*
 public class strings {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -169,5 +170,19 @@ public class strings {
         }
 
         System.out.println(res);
+    }
+}
+*/
+
+
+
+// String Builder
+
+
+public class strings {
+
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Tony");
+        System.out.println(sb);
     }
 }
