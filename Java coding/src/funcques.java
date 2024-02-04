@@ -188,7 +188,6 @@ public class funcques {
 // 8 (Print fibonacci series)
 
 public class funcques {
-
     public static void fibo(int n){
         int a = 0;
         int b = 1;

@@ -65,7 +65,7 @@ public class Online {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        int arr[][] = new int[m][n];
+        int arr[][] = new int[n][m];
 
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
