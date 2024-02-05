@@ -118,6 +118,7 @@ public class arrays {
 
 // 3(Take an array of numbers as input and check if it is an array sorted in ascending order.)
 
+/*
 public class arrays {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -150,6 +151,46 @@ public class arrays {
         else{
             System.out.println("The array is not sorted in ascending order");
         }
+    } 
+}
+*/
+
+
+// 4 (Reverse the array)
+
+public class arrays {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of array: ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        System.out.print("Enter the elements of array: ");
+        for(int i=0;i<size;i++){
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.print("Original array: ");
+        for(int i=0;i<size;i++){
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println();
+        int start = 0;
+        int end = size-1;
+
+        while(start<end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+
+            start++;
+            end--;
+        }
+        System.out.print("Reversed array: ");
+        for(int i=0;i<size;i++){
+            System.out.print(arr[i]+" ");
+        }
     }
-    
 }
