@@ -57,7 +57,7 @@ public class Online {
 
 // 2D array
 
-
+/*
 public class Online {
 
     public static void main(String[] args){
@@ -82,7 +82,33 @@ public class Online {
         }
     }
 }
+*/
 
+// Rotate array by given index
+
+public class Online {
+    public static void main(String[] args){
+        int d = 3;
+        int arr[] = {1,4,5,6,7,9,2};
+        int n = arr.length;
+
+        int temp[] = new int[d];
+
+        //store in temp array first
+        for(int i=0;i<d;i++){
+            temp[i] = arr[i];
+        }
+
+        for(int i=n-d-1;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+        for(int i=0;i<d;i++){
+            System.out.print(temp[i]+" ");
+        }
+
+        
+    }
+}
 
 
 

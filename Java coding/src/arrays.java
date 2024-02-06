@@ -158,6 +158,7 @@ public class arrays {
 
 // 4 (Reverse the array)
 
+/*
 public class arrays {
 
     public static void main(String[] args) {
@@ -189,6 +190,40 @@ public class arrays {
             end--;
         }
         System.out.print("Reversed array: ");
+        for(int i=0;i<size;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+*/
+
+
+// 5 (Move all the -ve numbers to front and +ve numbers to end)
+
+public class arrays {
+    public static void main(String[] args) {
+        Scanner sc=  new Scanner(System.in);
+        System.out.print("Enter the size: ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        System.out.print("Enter the elements of array: ");
+        for(int i=0;i<size;i++){
+            arr[i] = sc.nextInt();
+        }
+
+        int negIndex = 0;
+        for(int i=0;i<size;i++){
+            if(arr[i]<0){
+                if(i!=negIndex){
+                    int temp = arr[i];
+                    arr[i] = arr[negIndex];
+                    arr[negIndex] = temp;
+                }
+                negIndex++;
+            }
+        }
+
         for(int i=0;i<size;i++){
             System.out.print(arr[i]+" ");
         }

@@ -1,6 +1,6 @@
 import java.util.*;
 
-// Get Bit
+// 1) Get Bit
 
 /*
 public class bit_manip {
@@ -19,11 +19,11 @@ public class bit_manip {
 }
 */
 
-// Set Bit  (OR operation is used to set the bit)
+// 2) Set Bit  (OR operation is used to set the bit)
 
 public class bit_manip {
     public static void main(String[] args) {
-       int n = 5;
+       int n = 5;  //0101
        int pos = 1;
        int bitMask = 1<<pos;
 
@@ -31,3 +31,6 @@ public class bit_manip {
        System.out.println(newNum);
     }
 }
+
+
+// 3) Clear bit
