@@ -86,6 +86,7 @@ public class Online {
 
 // Rotate array by given index
 
+/*
 public class Online {
     public static void main(String[] args){
         int d = 3;
@@ -105,11 +106,69 @@ public class Online {
         for(int i=0;i<d;i++){
             System.out.print(temp[i]+" ");
         }
-
         
     }
 }
+*/
 
+// Print all the substrings of even length
+
+/*
+public class Online {
+
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+        String n = sc.next();
+
+        int len = n.length();
+        for(int i=0;i<=len;i++){
+            for(int j=i;j<=len;j++){
+                if((j-i)%2==0){
+                    System.out.println(n.substring(i,j)+" ");
+                }
+            }
+        }
+    }
+}
+*/
+
+
+//String Builder
+
+public class Online {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("ABCD");
+        //append
+        sb.append("abc");
+        System.out.println("Content is: "+sb);
+
+        StringBuilder sb2 = new StringBuilder(10);
+        System.out.println(sb2.capacity());
+        
+        //accessing char at index
+        System.out.println(sb.charAt(0));
+
+        //delete in range
+        sb.delete(2, 4);
+        System.out.println(sb);
+
+        //delete particular index
+        sb.deleteCharAt(0);
+        System.out.println(sb);
+
+        //replace char at particular index
+        sb.setCharAt(3, 'E');
+        System.out.println(sb);
+
+        //reverse string
+        sb.reverse();
+        System.out.println(sb);
+
+        //replace the string to a range
+        sb.replace(0, 4, "Good");
+        System.out.println(sb);
+    }
+}
 
 
 

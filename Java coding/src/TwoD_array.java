@@ -123,6 +123,7 @@ public class TwoD_array {
 
 
 // 2(For a given matrix of N x M, print its transpose.)
+
 /*
 public class TwoD_array {
     public static void main(String[] args){
@@ -187,8 +188,9 @@ public class TwoD_array {
 */
 
 
-// 4(Print anti diagonal elements)
+// 4(Print anti diagonal elements of the matrix)
 
+/*
 public class TwoD_array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -215,3 +217,27 @@ public class TwoD_array {
         }
     }
 }            
+*/
+
+
+// 5(Exchange of columns)
+
+public class TwoD_array {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter no. of rows: ");
+        int n = sc.nextInt();
+        System.out.print("Enter no. of cols: ");
+        int m = sc.nextInt();
+
+        int arr[][] = new int[n][m];
+        System.out.println("Enter the elements of array: ");
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+        
+    }
+} 
