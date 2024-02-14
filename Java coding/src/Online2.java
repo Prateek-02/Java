@@ -6,21 +6,35 @@ import java.util.*;
 
 public class Online2 {
     //attributes(instance properties)
-    int a =5;
-    int b =6;
+    int x =5;
+    int y =6;
+
+    // Default constructor
+    Online2(){
+        this.x = 8;
+        this.y = 10;
+        System.out.println("Object Created");
+    }
+    //Parameterized constructor
+    Online2(int x,int y){
+        this.x=x;
+        this.y=y;
+
+        System.out.println("Object created with data points "+ this.x + " and " + this.y);
+    }
 
     public void setX(int x){
-        this.a=x;
-        System.out.println((a));
+        this.x=x;
+        System.out.println((x));
     }
 
     public int getX(){
-        return this.a;
+        return this.x;
     }
     public static void main(String[] args){
-        Online2 obj = new Online2();
-        int x = obj.a;
-        int y = obj.b;
+        Online2 obj = new Online2(10,20);
+        int x = obj.x;
+        int y = obj.y;
         int z = x+y;
         System.out.println("Sum of x+y: "+z);
 
@@ -34,6 +48,4 @@ public class Online2 {
 
         System.out.println(obj2.getX());
     }
-
-
 }
