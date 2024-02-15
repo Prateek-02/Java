@@ -19,8 +19,10 @@ public class bit_manip {
 }
 */
 
+
 // 2) Set Bit  (OR operation is used to set the bit)
 
+/*
 public class bit_manip {
     public static void main(String[] args) {
        int n = 5;  //0101
@@ -31,6 +33,43 @@ public class bit_manip {
        System.out.println(newNum);  //(0111 = 7)
     }
 }
+*/
 
 
 // 3) Clear bit
+
+/*
+public class bit_manip {
+    public static void main(String[] args) {
+        int n = 5;          //(0101)
+        int pos = 2; 
+        int bitMask = 1<<pos;       //(1*2^2=4 = 0100)
+
+        int newNum = (~bitMask) & n;        //(1011 & 0101)
+        System.out.println(newNum);         //(0001 == 1)
+    }
+}
+*/
+
+
+// 4) Update bit
+
+public class bit_manip {
+
+    public static void main(String[] args) {
+        int n = 5;    //(0101)
+        int pos = 1;
+        int bitMask = 1<<pos;
+
+        // Update to 0
+
+        int newNum = (~bitMask & n);
+        System.out.println(newNum);
+
+        // Update to 1
+
+        int newNum2 = (bitMask | n);
+        System.out.println(newNum2);
+
+    }
+}
