@@ -57,16 +57,17 @@ public class bit_manip {
 public class bit_manip {
 
     public static void main(String[] args) {
-        int n = 5;    //(0101)
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int pos = 1;
         int bitMask = 1<<pos;
 
-        // Update to 0
+        // Update to 0   (use clear operation)
 
         int newNum = (~bitMask & n);
         System.out.println(newNum);
 
-        // Update to 1
+        // Update to 1   (use set operation)
 
         int newNum2 = (bitMask | n);
         System.out.println(newNum2);
