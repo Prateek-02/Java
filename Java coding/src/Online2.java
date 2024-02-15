@@ -39,7 +39,7 @@ public class Online2 {
         System.out.println("Sum of x+y: "+z);
 
         x += 5; 
-        y += 5;
+        y += 5; 
         z = x+y;
         System.out.println("Sum of x+y: "+z);
 

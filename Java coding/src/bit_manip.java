@@ -7,7 +7,7 @@ public class bit_manip {
     public static void main(String[] args) {
         int n = 5;  // 0101
         int pos = 2;
-        int bitMask = 1<<pos;
+        int bitMask = 1<<pos;    (1*2^2=4 == 0100)
 
         if((bitMask & n) == 0){      // And operation is used to get the bit
             System.out.println("Bit was zero");
@@ -25,10 +25,10 @@ public class bit_manip {
     public static void main(String[] args) {
        int n = 5;  //0101
        int pos = 1;
-       int bitMask = 1<<pos;
+       int bitMask = 1<<pos;   //(1*2^1 = 2 = 0010)
 
-       int newNum = bitMask | n;
-       System.out.println(newNum);
+       int newNum = bitMask | n;  //( 0101 | 0010 )
+       System.out.println(newNum);  //(0111 = 7)
     }
 }
 
