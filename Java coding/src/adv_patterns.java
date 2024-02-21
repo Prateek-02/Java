@@ -93,7 +93,7 @@ public class adv_patterns {
 
 // 4 (Palindromic pattern)
 
-/*
+
 public class adv_patterns {
 
     public static void main(String[] args) {
@@ -117,11 +117,12 @@ public class adv_patterns {
         }
     }
 }
-*/
+
 
 
 // 5 (Diamond pattern)
 
+/*
 public class adv_patterns {
 
     public static void main(String[] args) {
@@ -151,3 +152,4 @@ public class adv_patterns {
         }
     }
 }
+*/
