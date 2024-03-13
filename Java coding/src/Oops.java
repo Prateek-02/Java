@@ -1,4 +1,5 @@
-package bank;
+
+
 
 /*
 class Pen{
@@ -107,15 +108,15 @@ class EquiTriangle extends Triangle{
 
 public class Oops {
     public static void main(String[] args) {
-        // Shape s = new Shape();
-        // s.area();
-        // s.l = 5;
-        // s.h = 5;
-        // Triangle t1 = new Triangle();
-        // t1.area(s.l,s.h);
+        Shape s = new Shape();
+        s.area();
+        s.l = 5;
+        s.h = 5;
+        Triangle t1 = new Triangle();
+        t1.area(s.l,s.h);
 
-        bank.Account account1 = new bank.Account();
-        account1.name = "customer1";
+        // bank.Account account1 = new bank.Account();
+        // account1.name = "customer1";
 
        
 
