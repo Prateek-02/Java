@@ -72,5 +72,6 @@ public class bit_manip {
         int newNum2 = (bitMask | n);
         System.out.println(newNum2);
 
+        sc.close();
     }
 }

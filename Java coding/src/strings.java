@@ -218,6 +218,7 @@ public class strings {
 
 // Reverse string
 
+@SuppressWarnings("unused")
 public class strings {
 
     public static void main(String[] args) {

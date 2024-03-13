@@ -238,6 +238,6 @@ public class TwoD_array {
             }
         }
 
-        
+        sc.close();
     }
 } 

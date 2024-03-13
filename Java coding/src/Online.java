@@ -135,6 +135,7 @@ public class Online {
 
 //String Builder
 
+@SuppressWarnings("unused")
 public class Online {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("ABCD");

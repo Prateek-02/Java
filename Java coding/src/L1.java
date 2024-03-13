@@ -63,5 +63,7 @@ public class L1 {
         System.out.println(name1);
         System.out.println(a);
         System.out.println(b);
+
+        sc.close();
     }
 }

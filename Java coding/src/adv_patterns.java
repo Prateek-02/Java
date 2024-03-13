@@ -115,6 +115,7 @@ public class adv_patterns {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
 

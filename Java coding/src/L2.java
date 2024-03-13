@@ -64,5 +64,6 @@ public class L2 {
             System.out.println("Invalid");
 
         }
+        sc.close();
     }
 }

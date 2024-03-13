@@ -207,5 +207,6 @@ public class funcques {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         fibo(n);
+        sc.close();
     }
 }
