@@ -89,3 +89,41 @@ public class Online2 {
     }   
 }
 */
+
+// Abstract Class
+
+/*
+abstract class A{
+    int a =0;
+
+    abstract public void show();
+
+    public void setA(int a){
+        this.a=a;
+    }
+}
+*/
+interface in1{
+    //by default public and abstract
+    void show1();
+}
+interface in2{
+    void show2();
+}
+class test implements in1,in2{
+    int t1=5;
+    int t2=6;
+    public void show1(){
+        System.out.println("Value of t is: "+t1);
+    }
+    public void show2(){
+        System.out.println("Value of t is: "+t2);
+    }
+}
+public class Online2 {
+    public static void main(String[] args) {
+        test obj = new test();
+        obj.show1();
+        obj.show2();
+    }
+}
