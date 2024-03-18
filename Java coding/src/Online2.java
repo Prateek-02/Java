@@ -48,7 +48,6 @@ public class Online2 {
 }
 */
 
-
 // Inheritance
 
 /*
@@ -103,7 +102,12 @@ abstract class A{
     }
 }
 */
+
+/*
 interface in1{
+    //static,public,final
+    int i1=10;
+
     //by default public and abstract
     void show1();
 }
@@ -119,11 +123,100 @@ class test implements in1,in2{
     public void show2(){
         System.out.println("Value of t is: "+t2);
     }
+    
 }
 public class Online2 {
     public static void main(String[] args) {
         test obj = new test();
         obj.show1();
         obj.show2();
+    }
+}
+*/
+
+// Write a Java program to create an interface Shape with the getArea() method. 
+//Create three classes Rectangle,Triangle and Circle that implement the Shape interface.
+//Implement the getArea() method for each of the three classes.
+
+/*
+interface Shape {
+    void getArea();
+}
+
+class Rectangle implements Shape {
+    int l = 10;
+    int b = 10;
+
+    public void getArea() {
+        double Area = l * b;
+        System.out.println("Area of Rectangle is: " + Area);
+    }
+}
+
+class Triangle implements Shape {
+    int h = 5;
+    int b = 10;
+
+    public void getArea() {
+        double Area = (1.0 / 2) * b * h;
+        System.out.println("Area of Triangle is: " + Area);
+    }
+}
+
+class Circle implements Shape {
+    int r = 9;
+
+    public void getArea() {
+        double Area = Math.PI * r * r;
+        System.out.println("Area of Circle is: " + Area);
+    }
+}
+
+public class Online2 {
+    public static void main(String[] args) {
+        Rectangle obj1 = new Rectangle();
+        Triangle obj2 = new Triangle();
+        Circle obj3 = new Circle();
+
+        obj1.getArea();
+        obj2.getArea();
+        obj3.getArea();
+    }
+}
+*/
+
+
+interface Drawable {
+    void draw();
+}
+
+class Rectangle implements Drawable {
+    public void draw() {
+        System.out.println("Drawing Rectangle");
+    }
+}
+
+class Triangle implements Drawable {
+
+    public void draw() {
+        System.out.println("Drawing Triangle");
+    }
+}
+
+class Circle implements Drawable {
+    public void draw() {
+        System.out.println("Drawing Circle");
+    }
+}
+
+public class Online2 {
+    public static void main(String[] args) {
+        Rectangle obj1 = new Rectangle();
+        Triangle obj2 = new Triangle();
+        Circle obj3 = new Circle();
+
+        obj1.draw();
+        obj2.draw();
+        obj3.draw();
     }
 }
