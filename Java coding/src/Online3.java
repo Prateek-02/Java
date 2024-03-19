@@ -123,26 +123,34 @@ public class Online3 {
 // 4
 
 interface A{
+    int a = 10;
     void show1();
 
     interface B{
+        int b = a;
         void show2();
     }
 }
 
 interface C extends A{
+    int c = 20;
     void show3();
 }
 
-class test implements C{
+class test implements C,C.B{
+    @Override
     public void show1(){
-        System.out.println("Inside show1");
+        System.out.println(a);
     }
+
+    @Override
     public void show2(){
-        System.out.println("Inside show2");
+        System.out.println(b);
     }
+
+    @Override
     public void show3(){
-        System.out.println("Inside show3");
+        System.out.println(c);
     }
 }
 
