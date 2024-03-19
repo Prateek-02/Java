@@ -127,7 +127,7 @@ interface A{
     void show1();
 
     interface B{
-        int b = a;
+        int b = a+1;
         void show2();
     }
 }
