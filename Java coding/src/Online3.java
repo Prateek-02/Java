@@ -122,6 +122,7 @@ public class Online3 {
 
 // 4
 
+/*
 interface A{
     int a = 10;
     void show1();
@@ -162,4 +163,96 @@ public class Online3 {
         obj.show2();
         obj.show3();
     }
+}
+*/
+
+
+// 5
+
+/*
+class A{
+    int a = 5;
+    static int b = 6;
+    void show1(){
+        System.out.println(a);
+    }
+
+    class B{
+        void show2(){
+            System.out.println(b);
+            show1();
+        }
+    }
+}
+
+public class Online3 {
+    public static void main(String[] args) {
+        A obj1 = new A();
+        obj1.show1();
+
+        A.B obj2 = obj1.new B();
+        obj2.show2();
+    }    
+}
+*/
+
+// 6
+
+/*
+class A{
+    int a = 5;
+    static int b = 6;
+    void show1(){
+        System.out.println(a);
+    }
+
+    static class C{
+        void show3(){
+            System.out.println(b);
+        }
+    }
+}
+
+public class Online3 {
+    public static void main(String[] args) {
+        A obj1 = new A();
+        obj1.show1();
+
+        A.C obj2 = new A.C();
+        obj2.show3();
+    }    
+}
+*/
+
+// 7
+
+class A{
+    int a = 5;
+    int b = 6;
+    void show1(){
+        System.out.println(a);
+    }
+
+    class B{
+        void show2(){
+            System.out.println(b);
+        }
+    }
+}
+
+class C extends A{
+    void show3(){
+        System.out.println("Inside show3");
+    }
+}
+
+public class Online3 {
+    public static void main(String[] args) {
+        C obj1 = new C();
+        obj1.show1();
+        obj1.show3();
+
+        C.B obj2 = obj1.new B();
+        obj2.show2();
+    }    
 }
