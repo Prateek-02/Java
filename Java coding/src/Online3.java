@@ -226,6 +226,7 @@ public class Online3 {
 
 // 7
 
+/*
 class A{
     int a = 5;
     int b = 6;
@@ -255,4 +256,38 @@ public class Online3 {
         C.B obj2 = obj1.new B();
         obj2.show2();
     }    
+}
+*/
+
+// 8
+
+interface Int {
+    void myMethod();
+}
+
+class A {
+    public void outerMethod() {
+        System.out.println("Outer method of class A");
+        
+        if (true) {
+            System.out.println("Inside if block of class A");
+            
+            class B implements Int {
+                @Override
+                public void myMethod() {
+                    System.out.println("Implemented method in class B");
+                }
+            }
+            
+            B objB = new B();
+            objB.myMethod();
+        }
+    }
+}
+
+public class Online3 {
+    public static void main(String[] args) {
+        A objA = new A();
+        objA.outerMethod();
+    }
 }
