@@ -262,7 +262,7 @@ public class Online3 {
 // 8
 
 interface Int {
-    void myMethod();
+    void myMethod();  // functional interface
 }
 
 class A {
