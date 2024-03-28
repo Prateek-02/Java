@@ -78,6 +78,7 @@ public class Oops{
 
 /* INHERTANCE (one class inherit the property of another class) */
 
+/*
 class Shape{         // Parent class
     int l,h;
     public void area(){
@@ -97,11 +98,6 @@ class Circle extends Shape{
     }
 }
 
-class EquiTriangle extends Triangle{
-    public void area(int l,int h){
-        System.out.println((1.0/2)*l*h);
-    }
-}
 
 public class Oops {
     public static void main(String[] args) {
@@ -115,8 +111,114 @@ public class Oops {
         Circle c1 = new Circle();
         c1.area(5);
 
-        EquiTriangle e1 = new EquiTriangle();
-        e1.area(7,9);
-   
+        
+    }
+}
+*/
+
+
+// Abstraction
+
+/*
+abstract class Animal{
+    abstract void walk();
+    Animal(){
+        System.out.println("Inside animal constructor");
+    }
+    public void eat(){
+        System.out.println("Animal eats");
+    }
+}
+
+class Horse extends Animal{
+    Horse(){
+        System.out.println("Inside horse constructor");
+    }
+    public void walk(){
+        System.out.println("Walks on 4 legs");
+    }
+}
+
+class Chicken extends Animal{
+    public void walk(){
+        System.out.println("Walks on 2 legs");
+    }
+}
+
+public class Oops {
+    public static void main(String[] args) {
+        Horse horse = new Horse();
+        horse.walk();
+        horse.eat();
+
+    }
+}
+*/
+
+
+// Pure Abstraction(Using Interface)
+
+/*
+interface Animal {
+    int eyes = 2;
+    void walk();
+}
+
+interface Herbivore{
+    void eat();
+}
+
+class Horse implements Animal,Herbivore{
+    Horse(){
+        System.out.println("Inside horse constructor");
+    }
+    public void eat(){
+        System.out.println("Horse eats grass");
+    }
+    public void walk(){
+        System.out.println("Walks on 4 legs");
+        System.out.println("Horse has "+eyes+" eyes");
+    }
+}
+
+class Chicken implements Animal{
+    public void walk(){
+        System.out.println("Walks on 2 legs");
+        System.out.println("Chicken has "+eyes+" eyes");
+    }
+}
+
+public class Oops {
+    public static void main(String[] args) {
+        Horse horse = new Horse();
+        horse.walk();
+        horse.eat();
+
+        Chicken chicken = new Chicken();
+        chicken.walk();
+    }
+}
+*/
+
+
+// Static
+
+class Student{
+    String name;
+    static String school;    // it is common for everyone
+
+    public static void changeSchool(){
+        school = "newschool";
+    }
+}
+
+public class Oops {
+    public static void main(String[] args) {
+       Student.school  = "DAV";
+       Student student1 = new Student();
+       student1.name = "Tony";
+
+       System.out.println(student1.name);
+       System.out.println(student1.school);
     }
 }
