@@ -1,6 +1,3 @@
-
-
-
 /*
 class Pen{
     String color;
@@ -115,11 +112,11 @@ public class Oops {
         Triangle t1 = new Triangle();
         t1.area(s.l,s.h);
 
-        // bank.Account account1 = new bank.Account();
-        // account1.name = "customer1";
+        Circle c1 = new Circle();
+        c1.area(5);
 
-       
-
-        
+        EquiTriangle e1 = new EquiTriangle();
+        e1.area(7,9);
+   
     }
 }
