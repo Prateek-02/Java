@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // 1 (Print 5 to 1)
 /*
@@ -112,9 +112,9 @@ public class Recursion1 {
 */
 
 
-// 6 (Print x^n)
+// 6 (Print x^n, where Stack height = n)
 
-
+/*
 public class Recursion1 {
     public static int printPower(int x,int n){
         if(n==0){
@@ -130,6 +130,37 @@ public class Recursion1 {
     public static void main(String[] args) {
         int x = 2;
         int n = 6;
+        int ans = printPower(x, n);
+        System.out.println(ans);
+
+    }
+}
+*/
+
+
+// 7 (Print x^n, where Stack Height = logn)
+
+
+public class Recursion1 {
+    public static int printPower(int x,int n){
+        if(n==0){
+            return 1;
+        } 
+        if(x==0){
+            return 0;
+        } 
+
+        // if n is even
+        if(n%2==0){
+           return printPower(x, n/2) * printPower(x, n/2);
+        }  
+        else{  // n is odd
+            return printPower(x, n/2) * printPower(x, n/2) * x;
+        }
+    }
+    public static void main(String[] args) {
+        int x = 2;
+        int n = 7;
         int ans = printPower(x, n);
         System.out.println(ans);
 
