@@ -49,6 +49,7 @@ public class ExceptionHandling {
 
 // 3
 
+/*
 import java.util.Scanner;
 
 public class ExceptionHandling {
@@ -70,6 +71,38 @@ public class ExceptionHandling {
         }
         catch(Exception e){
             System.out.println("Exception in level 1");
+        }
+    }
+}
+*/
+
+
+// 4
+
+import java.util.Scanner;
+
+public class ExceptionHandling {
+    public static void main(String[] args) {
+        int[] marks = {45,67,79,70,50};
+        Scanner sc = new Scanner(System.in);
+        boolean flag = true;
+        while(flag){
+            System.out.print("Enter the index: ");
+            int ind = sc.nextInt();
+            try{
+                System.out.println("Welcome to nested try");
+                try{
+                    System.out.println(marks[ind]);
+                    flag = false;
+                }
+                catch(ArrayIndexOutOfBoundsException e){
+                    System.out.println("Index not present");
+                    System.out.println("Exception in level 2");
+                }
+            }
+            catch(Exception e){
+                System.out.println("Exception in level 1");
+            }
         }
     }
 }
