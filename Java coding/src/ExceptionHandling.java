@@ -111,6 +111,7 @@ public class ExceptionHandling {
 
 // 5(Exception class)
 
+/*
 import java.util.Scanner;
 
 class MyException extends Exception{
@@ -120,6 +121,16 @@ class MyException extends Exception{
 
     public String getMessage(){
         return "I am a getMessage()";
+    }
+}
+class MaxAgeException extends Exception{
+    public String toString(){
+        return "Age cannot br greater than 125";
+    }
+
+    @Override
+    public String getMessage(){
+        return "Make sure that the value of age entered is correct";
     }
 }
 public class ExceptionHandling {
@@ -138,6 +149,87 @@ public class ExceptionHandling {
                 System.out.println(e.toString());
                 e.printStackTrace();
             }
+        }
+    }
+}
+*/
+
+// 6 (Throw Vs Throws)
+
+/*
+class NegRadiusException extends Exception{
+    public String toString(){
+        return "Radius cannot be negative";
+    }
+
+    public String getMessage(){
+        return "Radius cannot be negative";
+    }
+}
+
+public class ExceptionHandling {
+    public static double area(int r) throws NegRadiusException{
+        if(r<0){
+            throw new NegRadiusException();
+        }
+        double res = Math.PI*r*r;
+        return res;
+    }
+    public static int divide(int a, int b) throws ArithmeticException{
+        int res = a/b;
+        return res;
+    }
+    public static void main(String[] args) {
+        try{
+            // int c = divide(6,0);
+            // System.out.println(c);
+            double d = area(9);
+            System.out.println(d);
+        }
+        catch(Exception e){
+            System.out.println(e.toString());
+        }
+        
+    } 
+}
+*/
+
+
+// 7(Finally)
+
+public class ExceptionHandling {
+    public static int greet(){
+        try{
+            int a = 50;
+            int b = 0;
+            int c = a/b;
+            return c;
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        finally{
+            System.out.println("This is the end of the function");
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        int k = greet();
+        System.out.println(k);
+        int a = 7;
+        int b = 9;
+        while(true){
+            try{
+                System.out.println(a/b);
+            }
+            catch(Exception e){
+                System.out.println(e);
+                break;
+            }
+            finally{
+                System.out.println("I am finally");
+            }
+            b--;
         }
     }
 }
