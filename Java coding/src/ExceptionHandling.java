@@ -47,7 +47,7 @@ public class ExceptionHandling {
 */
 
 
-// 3
+// 3(Nested try)
 
 /*
 import java.util.Scanner;
@@ -78,7 +78,7 @@ public class ExceptionHandling {
 
 
 // 4
-
+/*
 import java.util.Scanner;
 
 public class ExceptionHandling {
@@ -102,6 +102,41 @@ public class ExceptionHandling {
             }
             catch(Exception e){
                 System.out.println("Exception in level 1");
+            }
+        }
+        sc.close();
+    }
+}
+*/
+
+// 5(Exception class)
+
+import java.util.Scanner;
+
+class MyException extends Exception{
+    public String toString(){
+        return "I am a toString()";
+    }
+
+    public String getMessage(){
+        return "I am a getMessage()";
+    }
+}
+public class ExceptionHandling {
+    public static void main(String[] args) {
+        int a;
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        if(a<99){
+            sc.close();
+            try{
+                // throw new MyException();
+                throw new ArithmeticException("This is an Exception");
+            }
+            catch(Exception e){
+                System.out.println(e.getMessage());
+                System.out.println(e.toString());
+                e.printStackTrace();
             }
         }
     }

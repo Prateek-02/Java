@@ -1,6 +1,8 @@
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
+// import java.io.File;
+// import java.io.FileReader;
+// import java.io.FileWriter;
+import java.util.stream.*;
+import java.util.*;
 
 
 // 1
@@ -70,7 +72,7 @@ public class Online5 {
 
 // 2 
 
-
+/*
 public class Online5 {
     public static void main(String[] args) {
         File file = new File("test.txt");
@@ -117,4 +119,19 @@ public class Online5 {
         }
     }
 }
+*/
 
+
+// 3
+
+public class Online5 {
+    public static void main(String[] args) {
+        List<Integer> L = Arrays.asList(1,2,3,4);
+        List<Integer> S = L.stream().map(x -> x*x).collect(Collectors.toList());
+        System.out.println(S);
+
+        List<String> names = Arrays.asList("Prateek","Rahul","Rohit");
+        List<String> result = names.stream().filter(s -> s.startsWith("R")).collect(Collectors.toList());
+        System.out.println(result); 
+    }
+}
