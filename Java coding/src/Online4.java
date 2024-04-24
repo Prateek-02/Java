@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // import java.time.LocalDate;
 // import java.time.LocalDateTime;
@@ -127,6 +127,7 @@ public class Online4 {
 
 // 5
 
+/*
 import java.util.Arrays;
 
 public class Online4 {
@@ -165,4 +166,50 @@ public class Online4 {
         }
     }
 }
+*/
+
+
+// 6 
+
+import java.util.ArrayList;
+import java.util.List;
+
+class DataHolder<T> {
+    private List<T> elements;
+
+    public DataHolder() {
+        this.elements = new ArrayList<>();
+    }
+
+    public void add(T element) {
+        elements.add(element);
+    }
+
+    public void delete(T element) {
+        elements.remove(element);
+    }
+
+    public List<T> getElements() {
+        return new ArrayList<>(elements);
+    }
+}
+
+public class Online4 {
+    public static void main(String[] args) {
+        DataHolder<Integer> integerDataHolder = new DataHolder<>();
+
+        integerDataHolder.add(10);
+        integerDataHolder.add(20);
+        integerDataHolder.add(30);
+
+        integerDataHolder.delete(20);
+
+        List<Integer> elements = integerDataHolder.getElements();
+        System.out.println("Elements in the DataHolder:");
+        for (Integer element : elements) {
+            System.out.println(element);
+        }
+    }
+}
+
 
