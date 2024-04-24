@@ -69,40 +69,40 @@ public class Generics {
 
 /**
 
- */
+*/
 
-class NamesHolder<T>{
+class MarksHolder<T>{
     private List<T> elements;
 
-    public NamesHolder(){
+    public MarksHolder(){
         this.elements = new ArrayList<>();
     }
 
-    public void add(T name){
-        elements.add(name);
+    public void add(T element){
+        elements.add(element);
     }
 
-    public void delete(T name){
-        elements.remove(name);
+    public void delete(T element){
+        elements.remove(element);
     }
 
-    public List<T> getElements(){
+    public List<T> getMarks(){
         return new ArrayList<>(elements);
     }
 }
-
 public class Generics {
     public static void main(String[] args) {
-        NamesHolder<String> names = new NamesHolder<>();
+        MarksHolder<Integer> marks = new MarksHolder<>();
 
-        names.add("Dhoni");
-        names.add("Rohit");
-        names.add("Virat");
+        marks.add(98);
+        marks.add(90);
+        marks.add(86);
+        marks.add(95);
 
-        names.delete("Dhoni");
+        marks.delete(86);
 
-        List<String> elements = names.getElements();
-        for(String element:elements){
+        List<Integer> elements = marks.getMarks();
+        for(int element : elements){
             System.out.println(element);
         }
 
