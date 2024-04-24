@@ -1,5 +1,8 @@
 import java.util.ArrayList;
+import java.util.List;
 
+// 1
+/*
 class myGeneric<T1,T2>{
     int val;
     private T1 t1;
@@ -57,5 +60,51 @@ public class Generics {
         System.out.println(x);
         System.out.println(z);
         System.out.println(g1.getVal());
+    }
+}
+*/
+
+
+// 2
+
+/**
+
+ */
+
+class NamesHolder<T>{
+    private List<T> elements;
+
+    public NamesHolder(){
+        this.elements = new ArrayList<>();
+    }
+
+    public void add(T name){
+        elements.add(name);
+    }
+
+    public void delete(T name){
+        elements.remove(name);
+    }
+
+    public List<T> getElements(){
+        return new ArrayList<>(elements);
+    }
+}
+
+public class Generics {
+    public static void main(String[] args) {
+        NamesHolder<String> names = new NamesHolder<>();
+
+        names.add("Dhoni");
+        names.add("Rohit");
+        names.add("Virat");
+
+        names.delete("Dhoni");
+
+        List<String> elements = names.getElements();
+        for(String element:elements){
+            System.out.println(element);
+        }
+
     }
 }
