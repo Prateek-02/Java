@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 // 1
@@ -67,9 +68,7 @@ public class Generics {
 
 // 2
 
-/**
-
-*/
+/*
 
 class MarksHolder<T>{
     private List<T> elements;
@@ -105,6 +104,43 @@ public class Generics {
         for(int element : elements){
             System.out.println(element);
         }
+
+    }
+}
+
+*/
+
+
+// 3  (Array Vs ArrayList)  -->  Arrays have a fixed size but ArrayList can grow and shrink
+
+public class Generics {
+    public static void main(String[] args) {
+        // Create
+        String[] friends = {"John","Chris","Eric","Luke"};
+        ArrayList<String> fArrayList = new ArrayList<>(Arrays.asList("John","Chris","Eric","Luke")); 
+
+        //Get element
+        System.out.println(friends[0]);
+        System.out.println(fArrayList.get(0));
+
+        //Get size
+        System.out.println(friends.length);
+        System.out.println(fArrayList.size());
+
+        //Add element
+        fArrayList.add(4, "Mitch");
+        System.out.println(fArrayList.get(4));
+
+        //Set an element
+        friends[0] = "Carl";
+        System.out.println(friends[0]);
+
+        fArrayList.set(0, "Carl");
+        System.out.println(fArrayList.get(0));
+
+        //remove a element
+        fArrayList.remove(3);
+        System.out.println(fArrayList);
 
     }
 }
