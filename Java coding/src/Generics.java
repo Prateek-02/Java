@@ -111,8 +111,87 @@ public class Generics {
 */
 
 
-// 3  (Array Vs ArrayList)  -->  Arrays have a fixed size but ArrayList can grow and shrink
+// 3
 
+class DataHolder<T>{
+    public List<T> elements;
+    
+    public DataHolder(){
+        this.elements = new ArrayList<>();
+    }
+
+    public void add(T t){
+        elements.add(t);
+    }
+
+    public void delete(T t){
+        elements.remove(t);
+    }
+
+    public List<T> getData(){
+        return new ArrayList<>(elements);
+    }
+}
+
+public class Generics {
+    public static void main(String[] args) {
+        DataHolder<Integer> myData = new DataHolder<>();
+
+        myData.add(5);
+        myData.add(15);
+        myData.add(25);
+        myData.add(35);
+        myData.add(45);
+
+        myData.delete(25);
+
+        List<Integer> elements = myData.getData();
+        for(int i:elements){
+            System.out.println(i);
+        }
+    }
+}
+
+
+
+
+
+
+
+// 4
+/*
+
+class Printer <T>{
+    private T t;
+
+    public Printer(T t){
+        this.t=t;
+    }
+
+    public void Display(){
+        System.out.println(t);
+    }
+
+}
+
+public class Generics {
+    public static void main(String[] args) {
+        Printer<Integer> myData = new Printer<>(5);
+        myData.Display();
+
+        Printer<Double> newData = new Printer<>(33.5);
+        newData.Display();
+
+        Printer<String> myStr = new Printer<>("Prateek");
+        myStr.Display();
+
+    }
+}
+
+*/
+
+// 5 (Array Vs ArrayList)  -->  Arrays have a fixed size but ArrayList can grow and shrink
+/* 
 public class Generics {
     public static void main(String[] args) {
         // Create
@@ -144,3 +223,4 @@ public class Generics {
 
     }
 }
+*/
