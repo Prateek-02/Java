@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.List;
 
 // 1
@@ -104,7 +104,6 @@ public class Generics {
         for(int element : elements){
             System.out.println(element);
         }
-
     }
 }
 
