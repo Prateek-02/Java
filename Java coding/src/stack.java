@@ -1,7 +1,8 @@
 // Stack implementation using LinkedList
 
 public class stack {
-    static class Node{
+    Node head;
+    class Node{
         int data;
         Node next;
 
@@ -11,8 +12,6 @@ public class stack {
         }
     }
 
-    static class Stack{
-        public Node head;
         public  boolean isEmpty(){
             return head == null;
         }
@@ -43,9 +42,9 @@ public class stack {
             }
             return head.data;
         }
-    }
+
     public static void main(String[] args) {
-        Stack s = new Stack();
+        stack s = new stack();
 
         s.push(1);
         s.push(2);
