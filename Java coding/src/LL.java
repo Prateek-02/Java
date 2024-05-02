@@ -1,6 +1,13 @@
+// From Scratch
 
+/*
 public class LL {
     Node head;
+    private int size;
+
+    LL(){
+        this.size = 0;
+    }
 
     class Node{
         String data;
@@ -9,6 +16,7 @@ public class LL {
         Node(String data){
             this.data = data;
             this.next = null;
+            size++;
         }
     }
 
@@ -61,7 +69,7 @@ public class LL {
             System.out.println("The list is empty");
             return;
         }
-
+        size--;
         head = head.next;
     }
 
@@ -72,6 +80,7 @@ public class LL {
             return;
         }
 
+        size--;
         if(head.next == null){
             head = null;
             return;
@@ -85,6 +94,10 @@ public class LL {
         }
 
         secondLast.next = null;
+    }
+
+    public int getSize(){
+        return size;
     }
 
 
@@ -106,6 +119,39 @@ public class LL {
         list.deleteLast();
         list.printlist();
 
+        System.out.println(list.getSize());
 
     }
+}
+
+*/
+
+
+// Using Collection FrameWork
+
+import java.util.*;
+
+public class LL {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<String>();
+
+        list.addFirst("a");
+        list.addFirst("is");
+        System.out.println(list);
+
+        list.addFirst("this");
+        list.addLast("list");
+        System.out.println("List after adding \"this\" at first and \"list\" at last"+list);
+
+        System.out.println("Size of the list: "+list.size());
+
+        list.removeFirst();
+        System.out.println("List after removing first element: "+list);
+
+        list.removeLast();
+        System.out.println("List after removing last element: "+list);
+
+        System.out.println("Size of the list: "+list.size());
+
+    }    
 }
