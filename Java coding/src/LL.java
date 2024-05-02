@@ -144,21 +144,19 @@ public class LL {
         System.out.println("List after adding \"this\" at first and \"list\" at last"+list);
 
         System.out.println("Size of the list: "+list.size());
-
+        
+        for(int i=0;i<list.size();i++){
+            System.out.print(list.get(i)+" -> ");
+        }
+        System.out.println("null");
+        
         list.removeFirst();
         System.out.println("List after removing first element: "+list);
 
         list.removeLast();
         System.out.println("List after removing last element: "+list);
 
-        System.out.println("Size of the list: "+list.size());
-
-        for(int i=0;i<list.size();i++){
-            System.out.println(list.get(i));
-        }
-
         // sorting
-
         Collections.sort(list);
         System.out.println("after sorting: "+list);
 
