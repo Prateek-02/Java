@@ -80,7 +80,7 @@ public class loops {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for(int i=1;i<=10;i++){
-            System.out.println(i + " X " + n + " = " + i*n );
+            System.out.println(n + " X " + i + " = " + i*n );
         }
         sc.close();
     }

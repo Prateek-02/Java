@@ -33,6 +33,8 @@ public class queue{
 
         ArrayList<Integer> list = new ArrayList<>(queue);
         Collections.reverse(list);
-        System.out.println(list);                            
+        System.out.println(list);     
+        
+        sc.close();
     }
 }
